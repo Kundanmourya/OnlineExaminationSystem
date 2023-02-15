@@ -1,0 +1,104 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 Feb, 2023, 10:01:30 AM
+    Author     : Chandan
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.container table.full-border{
+    width: 100%;
+    padding: 8px;
+    border: hidden;
+}
+
+.container table.top-table {
+    width:100%;
+    border: 2px solid black;
+}
+
+.container table.top-table tr>td{
+    text-align: center;
+}
+.container table.top-table tr>td>th{
+    text-align: left;
+}
+
+.container table.full-border table.tab-left-call-side{
+    width: 45%;
+    border: 2px solid black;
+}
+
+table.tab-left-call-side tr.tab-header-call,
+table.tab-left-call-side tr.tab-sub-header-call{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container table.full-border table.tab-right-put-side{
+    width: 45%;
+    border: 2px solid black;
+}
+
+
+table.tab-right-put-side tr.tab-header-put,
+table.tab-right-put-side tr.tab-sub-header-put{
+    background-color: #be5a78;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+tfoot.tab-sum-foot{
+    text-align: center;
+    background-color: orange;
+}
+
+.container .tab-middle-oi{
+    width: 60%;
+    border: 2px solid black;
+}
+
+.container table.tab-middle-oi tr:hover{
+    background-color: lightgrey;
+}
+
+table.tab-middle-oi tr.tab-header-oi{
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    pointer-events: none;
+}
+table.tab-middle-oi tr.tab-sub-header-oi{
+    background-color: lightyellow;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 746px){
+    .container .tab-middle-oi{
+        width: 80%;
+        border: 2px solid black;
+        align-items: center;
+    }
+}
+

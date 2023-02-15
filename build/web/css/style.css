@@ -1,0 +1,146 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 Feb, 2023, 10:00:34 AM
+    Author     : Chandan
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+
+a {
+    text-decoration: none;
+}
+
+
+
+::selection{
+    color:white;
+    background:red;
+}
+
+.form {
+    max-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -5px 3px 10px -5px blue;
+    background:rgb(232, 226, 226);
+}
+
+.form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form p {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+
+.form form .error-text {
+    display: none;
+    color: #851923;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: rgba(255, 0, 0, 0.333);
+    border: 1px solid #dfa58b;
+    margin-bottom: 8px;
+}
+
+.form .grid-details{
+    display: flex;
+}
+
+.form .grid-details .input:first-child {
+    margin-right: 8px;
+    width: 100%;
+}
+
+.form .grid-details .input:last-child {
+    margin-left: 8px;
+    width: 100%;
+}
+
+.form form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.form form .input input:focus,
+.form form .input input:valid{
+    border: 2px solid blue;
+    transition: 0.1s ease;
+    outline: none;
+}
+
+.form label {
+    font-weight: bold;
+  }
+  
+.form label span{
+    color: red;
+  }
+
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: white;
+    width: 100%;
+    background: blue;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    border: 2px solid #2983aa;
+}
+
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form .link a{
+    color: blue;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.form .link a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 796px) {
+    .form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: -5px 3px 10px -5px blue;
+        background:rgb(232, 226, 226);
+      }
+}
+
+
+
+.container{
+    width: 100%;
+}

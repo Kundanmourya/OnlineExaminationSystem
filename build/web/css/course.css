@@ -1,0 +1,91 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 Feb, 2023, 10:03:04 AM
+    Author     : Chandan
+*/
+
+
+.content-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  margin: 1px;
+}
+
+
+.right-container .contact-text,
+.left-container .contact-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 700px) {
+  .left-container,
+  .right-container {
+    flex: 100%;
+  }
+}
+
+.container-body{
+  margin-top: 20px;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow:0 0 0 2px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+label span{
+  color: red;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+@media only screen and (max-width: 796px) {
+    .contact-form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow:0 0 0 2px;
+      }
+}

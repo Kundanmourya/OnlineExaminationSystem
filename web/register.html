@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html>
+    <head>
+        <title>Register Student | OES </title>
+        <link rel="stylesheet" type="text/css" href="./css/topnav.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="form" >
+            <h2>Student Register</h2>
+            <p></p>
+            <form action="controller.jsp">
+                <input type="hidden" name="page" value="register">
+                <div class="error-text"></div>
+                <div class="grid-details">
+                    <div class="input">
+                        <label>First Name</label>
+                        <input type="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-'\s]*">
+                    </div>
+                    <div class="input">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'-'\s]*">
+                    </div>
+                </div>
+                <div class="input">
+                    <label>Username</label>
+                    <input type="text" name="uname" placeholder="Enter Username" required>
+                </div>
+                <div class="input">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter Your Valid Email" required>
+                </div>
+                <div class="input">
+                    <label>Phone</label>
+                    <input type="number" name="contact" placeholder="Phone Number" required >
+                </div>
+                <div class="grid-details">
+                    <div class="input">
+                        <label>Address</label>
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+                    <div class="input">
+                        <label>City</label>
+                        <input type="text" name="city" placeholder="City" required>
+                    </div>
+                </div>
+                <div class="grid-details">
+                    <div class="input">
+                        <label>Password</label>
+                        <input type="password" name="pass" placeholder="Password" required>
+                    </div>
+                    <div class="input">
+                        <label>Confirm Password</label>
+                        <input type="text" name="cpass" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Register" name="Signup" class="button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
